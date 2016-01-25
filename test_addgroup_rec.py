@@ -10,7 +10,7 @@ def is_alert_present(wd):
     except:
         return False
 
-class (unittest.TestCase):
+class my_test(unittest.TestCase):
     def setUp(self):
         self.wd = WebDriver()
         self.wd.implicitly_wait(60)
@@ -34,8 +34,6 @@ class (unittest.TestCase):
         wd.find_element_by_name("submit").click()
         wd.find_element_by_link_text("group page").click()
         wd.find_element_by_css_selector("span.group").click()
-        if wd.find_element_by_name("selected[]").is_selected():
-            wd.find_element_by_name("selected[]").click()
         wd.find_element_by_link_text("Logout").click()
         self.assertTrue(success)
     

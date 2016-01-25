@@ -24,8 +24,8 @@
       <file leaf-file-name="test_addgroup_rec.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_addgroup_rec.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.59799">
-              <caret line="35" column="61" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="61" />
+            <state vertical-scroll-proportion="0.27386934">
+              <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
               <folding>
                 <element signature="e#24#82#0" expanded="true" />
               </folding>
@@ -33,7 +33,24 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="group.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/group.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,6 +58,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/group.py" />
         <option value="$PROJECT_DIR$/test_addgroup_rec.py" />
       </list>
     </option>
@@ -295,13 +313,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_addgroup_rec - 2016.01.26 at 00h 02m 20s.xml">
-      <configuration name="Unittests in test_addgroup_rec" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_test_addgroup_rec - 2016.01.26 at 00h 03m 30s.xml">
       <configuration name="Unittests in test_addgroup_rec" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_test_addgroup_rec_py - 2016.01.26 at 00h 05m 18s.xml">
+      <configuration name="py.test in test_addgroup_rec.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_addgroup_rec_py - 2016.01.26 at 00h 37m 57s.xml">
+      <configuration name="py.test in test_addgroup_rec.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_addgroup_rec_py - 2016.01.26 at 01h 02m 25s.xml">
+      <configuration name="py.test in test_addgroup_rec.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_addgroup_rec_py - 2016.01.26 at 01h 03m 45s.xml">
+      <configuration name="py.test in test_addgroup_rec.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_addgroup_rec_py - 2016.01.26 at 01h 05m 08s.xml">
+      <configuration name="py.test in test_addgroup_rec.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_addgroup_rec_py - 2016.01.26 at 01h 06m 57s.xml">
+      <configuration name="py.test in test_addgroup_rec.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_addgroup_rec_py - 2016.01.26 at 01h 17m 44s.xml">
+      <configuration name="py.test in test_addgroup_rec.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_addgroup_rec_py - 2016.01.26 at 01h 22m 16s.xml">
+      <configuration name="py.test in test_addgroup_rec.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_addgroup_rec_py - 2016.01.26 at 01h 26m 36s.xml">
       <configuration name="py.test in test_addgroup_rec.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -332,14 +371,24 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/group.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test_addgroup_rec.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59799">
-          <caret line="35" column="61" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.27386934">
+          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
           <folding>
             <element signature="e#24#82#0" expanded="true" />
           </folding>

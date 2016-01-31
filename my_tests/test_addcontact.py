@@ -10,20 +10,17 @@ def app(request):
     request.addfinalizer(fixture.destroy)
     return fixture
 
-
 def test_add_empty_contact(app):
     app.wd_helper.open_url("http://localhost/addressbook/")
     app.wd_helper.login(login="admin", pwd="secret")
-    app.add_contact(Contact())
+    app.contact_helper.add(Contact())
     app.wd_helper.logout()
 
 def test_add_contact(app):
     app.wd_helper.open_url("http://localhost/addressbook/")
     app.wd_helper.login(login="admin", pwd="secret")
     #fill all fields with '123' value
-    contact=Contact()
-    contact.fill_data_with_trash()
-    app.add_contact(contact)
+    app.contact_helper.add(Contact('123'))
     app.wd_helper.logout()
 
 

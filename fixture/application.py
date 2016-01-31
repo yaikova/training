@@ -1,4 +1,4 @@
-from wd_helper import WDH
+from fixture.wd_helper import WDH
 from selenium.webdriver.firefox.webdriver import WebDriver
 
 class Application:

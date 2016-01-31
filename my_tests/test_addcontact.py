@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
-from selenium.webdriver.firefox.webdriver import WebDriver
-import unittest
 import pytest
-from wd_helper import WDH
-from contact import Contact
-from application import Application
+from fixture.application import Application
+from model.contact import Contact
+
 
 @pytest.fixture
 def app(request):

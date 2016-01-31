@@ -1,5 +1,4 @@
-from selenium.webdriver.firefox.webdriver import WebDriver
-
+from selenium import webdriver
 
 class WDH:
 
@@ -22,3 +21,6 @@ class WDH:
         self.wd.find_element_by_name(field_name).click()
         self.wd.find_element_by_name(field_name).clear()
         self.wd.find_element_by_name(field_name).send_keys(field_text)
+
+    def logout(self):
+        self.wd.find_element_by_link_text("Logout").click()

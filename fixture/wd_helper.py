@@ -7,6 +7,9 @@ class WDH:
     def open_url(self, url):
         self.app.wd.get(url)
 
+    def open_home_page(self, app):
+        self.app.wd.get(app.host + '/addressbook/')
+
     def login(self, login, pwd):
         self.app.wd.find_element_by_name("user").click()
         self.app.wd.find_element_by_name("user").clear()

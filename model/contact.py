@@ -8,4 +8,4 @@ class Contact:
             'byear', 'ayear', 'address2', 'phone2', 'notes']
         self.data={}
         for key in self.field_list:
-                self.data.update({key: base_str})
+            self.data.update({key: base_str})

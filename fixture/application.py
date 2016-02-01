@@ -5,12 +5,13 @@ from selenium.webdriver.firefox.webdriver import WebDriver
 
 class Application:
 
-    def __init__(self):
+    def __init__(self, host = 'http://localhost'):
         self.wd = WebDriver()
         self.wd.implicitly_wait(60)
         self.wd_helper = WDH(self)
         self.group_helper = GroupHelper(self)
         self.contact_helper = ContactHelper(self)
+        self.host = host
 
     def destroy(self):
         self.wd.quit()

@@ -6,6 +6,7 @@ from selenium.webdriver.firefox.webdriver import WebDriver
 class Application:
 
     def __init__(self, host = 'http://localhost'):
+        print('Start test run and create webdriver')
         self.wd = WebDriver()
         self.wd.implicitly_wait(60)
         self.wd_helper = WDH(self)
@@ -14,4 +15,5 @@ class Application:
         self.host = host
 
     def destroy(self):
+        print('Finish test run and destroy webdriver')
         self.wd.quit()

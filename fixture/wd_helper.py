@@ -10,6 +10,12 @@ class WDH:
     def open_home_page(self, app):
         self.app.wd.get(app.host + '/addressbook/')
 
+    def confirm_alert(self):
+        self.app.wd.switch_to_alert().accept()
+
+    def decline_alert(self):
+        self.app.wd.switch_to_alert().dismiss()
+
     def fill_field(self, field_name, field_text):
         self.app.wd.find_element_by_name(field_name).click()
         self.app.wd.find_element_by_name(field_name).clear()

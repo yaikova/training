@@ -12,14 +12,14 @@ class GroupHelper:
     def return_to_group_page(self):
         self.app.wd.find_element_by_link_text("group page").click()
 
-    def select_first_group(self):
+    def select_first(self):
         self.open_group_page()
         self.app.wd.find_element_by_name("selected[]").click()
 
-    def delete_group(self):
+    def delete(self):
         self.app.wd_helper.click_button('delete')
 
-    def edit_group(self):
+    def edit(self):
         self.app.wd_helper.click_button('edit')
         #fill group params
         group = Group(self.app.wd_helper.get_field_val('group_name') + '_edit',
@@ -30,7 +30,7 @@ class GroupHelper:
         self.app.wd_helper.fill_field(field_name='group_footer', field_text=group.footer)
         self.app.wd.find_element_by_name('update').click()
 
-    def add_group(self, group):
+    def add(self, group):
         #click group creation button
         self.open_group_page()
         self.app.wd.find_element_by_name("new").click()

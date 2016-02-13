@@ -19,6 +19,11 @@ def app(request):
             fixture.session_helper.login_as_admin()
     return fixture
 
+@pytest.fixture
+def group(request):
+    global fixture
+    fixture.group_helper.open_group_page()
+
 
 @pytest.fixture(scope = 'session', autouse = True)
 def finish(request):

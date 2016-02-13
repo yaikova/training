@@ -24,12 +24,19 @@ class GroupHelper:
     def click_update(self):
         self.app.wd.find_element_by_name('update').click()
 
+    def count(self):
+        return len(self.app.wd.find_elements_by_name("selected[]"))
+
+    def group_exists(self):
+        return self.count() > 0
+
     def change_fields(self, group):
         self.click_edit()
         self.app.wd_helper.fill_field(field_name='group_name', field_text=group.name)
         self.app.wd_helper.fill_field(field_name='group_header', field_text=group.header)
         self.app.wd_helper.fill_field(field_name='group_footer', field_text=group.footer)
         self.click_update()
+        self.app.group_helper.return_to_group_page()
 
     def edit_all_fields(self):
         self.click_edit()
@@ -41,6 +48,7 @@ class GroupHelper:
         self.app.wd_helper.fill_field(field_name='group_header', field_text=group.header)
         self.app.wd_helper.fill_field(field_name='group_footer', field_text=group.footer)
         self.click_update()
+        self.app.group_helper.return_to_group_page()
 
     def add(self, group):
         #click group creation button
@@ -51,4 +59,6 @@ class GroupHelper:
         self.app.wd_helper.fill_field(field_name='group_footer', field_text=group.footer)
         #click submit button
         self.app.wd.find_element_by_name("submit").click()
+        self.app.group_helper.return_to_group_page()
+
 

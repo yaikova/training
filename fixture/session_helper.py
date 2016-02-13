@@ -3,6 +3,9 @@ class SessionHelper:
     def __init__(self, app):
         self.app = app
 
+    def login_as_admin(self):
+        self.login(login="admin", pwd="secret")
+
     def login(self, login, pwd):
         self.app.wd.find_element_by_name("user").click()
         self.app.wd.find_element_by_name("user").clear()

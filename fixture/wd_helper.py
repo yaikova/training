@@ -8,7 +8,8 @@ class WDH:
         self.app.wd.get(url)
 
     def open_home_page(self):
-        self.app.wd.get(self.app.host + '/addressbook/')
+        if not self.app.wd.current_url.endswith('/addressbook/'):
+            self.app.wd.get(self.app.host + '/addressbook/')
 
     def confirm_alert(self):
         self.app.wd.switch_to_alert().accept()

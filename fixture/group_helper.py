@@ -7,7 +7,8 @@ class GroupHelper:
         self.app = app
 
     def open_group_page(self):
-        self.app.wd.find_element_by_link_text("groups").click()
+        if not (self.app.wd.current_url.endswith('/group.php') and len(self.app.wd.find_elements_by_name("new"))>0):
+            self.app.wd.find_element_by_link_text("groups").click()
 
     def return_to_group_page(self):
         self.app.wd.find_element_by_link_text("group page").click()

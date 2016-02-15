@@ -8,7 +8,7 @@ class Application:
 
     def __init__(self, host = 'http://localhost'):
         self.wd = WebDriver()
-        self.wd.implicitly_wait(10)
+        #self.wd.implicitly_wait(10)
         self.wd_helper = WDH(self)
         self.group_helper = GroupHelper(self)
         self.contact_helper = ContactHelper(self)

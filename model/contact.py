@@ -1,6 +1,6 @@
 class Contact:
 
-    def __init__(self, base_str=''):
+    def __init__(self, base_str = None):
         self.field_list = [ 'firstname', 'middlename', 'lastname', 'nickname',
             'title',  'company', 'address',
             'home', 'mobile', 'work', 'fax',
